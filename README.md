@@ -4,14 +4,6 @@
 
 This Terraform configuration deploys a private Azure Managed Redis instance for AI chat history.
 
-### Architecture
-
-```mermaid
-flowchart LR
-    App[AI application] -->|Private endpoint| Redis[Azure Managed Redis]
-    Redis -->|Persist| History[(Chat history)]
-```
-
 ### Configuration
 
 - Public network access is disabled.
